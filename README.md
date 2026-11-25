@@ -3,6 +3,7 @@
 **Zero-dependency branching narrative engine for interactive fiction, visual novels, and romance story apps** — story-graph state tracking, gated choices, a persistent memory log, save/restore, a static validator, and a JSON Schema. Native ESM, TypeScript declarations, MIT.
 
 [![npm version](https://img.shields.io/npm/v/@ouba-studio/branching-story-kit?style=flat-square&color=c084fc)](https://www.npmjs.com/package/@ouba-studio/branching-story-kit)
+[![JSR — @ouba-studio/branching-story-kit](https://jsr.io/badges/@ouba-studio/branching-story-kit?style=flat-square)](https://jsr.io/@ouba-studio/branching-story-kit)
 [![Zenodo DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24514910.svg)](https://doi.org/10.5281/zenodo.24514910)
 [![Harvard Dataverse DOI](https://img.shields.io/badge/Harvard%20Dataverse-10.7910%2FDVN%2FYEBHQR-2b6cb0?style=flat-square)](https://doi.org/10.7910/DVN/YEBHQR)
 [![GitHub Pages — live demo](https://img.shields.io/badge/GitHub%20Pages-live%20demo-181717?style=flat-square&logo=github)](https://ouba-studio.github.io/branching-story-kit/)
@@ -61,7 +62,60 @@ pnpm add @ouba-studio/branching-story-kit
 yarn add @ouba-studio/branching-story-kit
 ```
 
-## Quickstart
+**JSR (Deno / Bun / Node with `jsr:` specifiers) — no `node_modules`, no build step:**
+
+```bash
+deno add jsr:@ouba-studio/branching-story-kit
+# or import it directly:
+# import { StoryEngine, validateStory } from "jsr:@ouba-studio/branching-story-kit@1";
+```
+
+Package page: **https://jsr.io/@ouba-studio/branching-story-kit**
+
+## Quickstart via jsDelivr (no install)
+
+One file, zero dependencies — drop it straight into a `<script type="module">` tag or an
+`import()` call. jsDelivr serves the tagged GitHub release with a global CDN cache, so the
+same URL works in a blog post, a CodePen, or a university writing-lab handout:
+
+```html
+<script type="module">
+  import { StoryEngine, validateStory } from
+    "https://cdn.jsdelivr.net/gh/ouba-studio/branching-story-kit@v1.0.0/index.mjs";
+
+  const story = {
+    id: "two-scenes",
+    start: "door",
+    initialState: { trust: 1 },
+    scenes: {
+      door: {
+        title: "The Door",
+        body: "The lamp is still on.",
+        choices: [{ label: "Knock", next: "inside", effects: { trust: 2 } }],
+      },
+      inside: { title: "Inside", body: "Trust = {{trust}}.", ending: true },
+    },
+  };
+
+  if (validateStory(story).valid) {
+    const engine = new StoryEngine(story);
+    engine.choose(0);
+    document.body.textContent = engine.current().body; // "Trust = 3."
+  }
+</script>
+```
+
+Pin the version for anything you ship: `@v1.0.0` is immutable, `@main` tracks `HEAD`.
+
+| Channel | Import specifier |
+| :--- | :--- |
+| **jsDelivr (GitHub release, pinned)** | `https://cdn.jsdelivr.net/gh/ouba-studio/branching-story-kit@v1.0.0/index.mjs` |
+| **jsDelivr (npm mirror)** | `https://cdn.jsdelivr.net/npm/@ouba-studio/branching-story-kit@1.0.0/index.mjs` |
+| **JSR** | `jsr:@ouba-studio/branching-story-kit@1` → https://jsr.io/@ouba-studio/branching-story-kit |
+| **npm** | `@ouba-studio/branching-story-kit` |
+| **GitHub Pages (live interactive demo)** | https://ouba-studio.github.io/branching-story-kit/ |
+
+## Quickstart (npm)
 
 ```js
 import { StoryEngine, validateStory } from "@ouba-studio/branching-story-kit";
@@ -215,6 +269,7 @@ branching-story-kit/
 ├── index.mjs                  # the engine (zero dependencies)
 ├── index.d.ts                 # TypeScript declarations
 ├── story.schema.json          # JSON Schema for story manifests
+├── jsr.json                   # JSR (jsr.io) package manifest — @ouba-studio/branching-story-kit
 ├── test.mjs                   # node --test suite (21 tests)
 ├── examples/
 │   ├── midnight-bookshop.mjs  # the demo story as a manifest
@@ -249,6 +304,24 @@ If you use `branching-story-kit` in research, a product, or a game, cite:
 
 Machine-readable metadata: [`CITATION.cff`](./CITATION.cff).
 
+### Permanent identifiers
+
+| Artifact | Identifier |
+| :--- | :--- |
+| **This software (Zenodo, v1.0.0)** | [10.5281/zenodo.24514910](https://doi.org/10.5281/zenodo.24514910) |
+| npm package | [`@ouba-studio/branching-story-kit`](https://www.npmjs.com/package/@ouba-studio/branching-story-kit) |
+| JSR package | [`@ouba-studio/branching-story-kit`](https://jsr.io/@ouba-studio/branching-story-kit) |
+| GitHub release | [`v1.0.0`](https://github.com/ouba-studio/branching-story-kit/releases/tag/v1.0.0) |
+| Live demo | https://ouba-studio.github.io/branching-story-kit/ |
+
+### Use it in a classroom
+
+`branching-story-kit` is the engine behind the open writing-lab exercises on
+**[Ouba+ for Students](https://www.ouba.art/students)** — MIT-licensed, zero dependencies, and
+small enough to read in one sitting, which is the point: students edit a JSON manifest and watch
+state, gating, and memory behave deterministically. Verified `.edu` / accredited-university
+students also get [Ouba+ free](https://www.ouba.art/students) for full-length reading.
+
 ## License
 
 [MIT](./LICENSE) © 2026 Ouba Studio. Use it in commercial games, embed it in apps, ship it — just keep the notice.
@@ -256,5 +329,7 @@ Machine-readable metadata: [`CITATION.cff`](./CITATION.cff).
 ## Ouba
 
 - **Play interactive romance & fiction free** — https://www.ouba.art/ (web · iOS · Android)
+- **Ouba+ for Students** — verified `.edu` / accredited-university students get 100% free Ouba+ (no card, no auto-billing): https://www.ouba.art/students
 - **The 2026 AI Story Apps Benchmark** — https://www.ouba.art/i-tested-ai-story-apps
+- **Cite this kit** — Zenodo DOI [10.5281/zenodo.24514910](https://doi.org/10.5281/zenodo.24514910)
 - **Contact** — team@ouba.art
