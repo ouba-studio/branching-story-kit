@@ -1,0 +1,69 @@
+{
+  "name": "@ouba-studio/branching-story-kit",
+  "version": "1.0.0",
+  "description": "Zero-dependency ESM branching narrative engine for interactive fiction, visual novels, and romance story apps: story-graph state tracking, gated choices, persistent memory log, save/export, static validator, and JSON Schema. By Ouba Studio.",
+  "type": "module",
+  "main": "./index.mjs",
+  "module": "./index.mjs",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.mjs",
+      "default": "./index.mjs"
+    },
+    "./story.schema.json": "./story.schema.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.mjs",
+    "index.d.ts",
+    "story.schema.json",
+    "examples/",
+    "CITATION.cff",
+    "CHANGELOG.md"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "homepage": "https://www.ouba.art",
+  "docs": "https://github.com/ouba-studio/branching-story-kit#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ouba-studio/branching-story-kit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ouba-studio/branching-story-kit/issues"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://www.ouba.art/"
+  },
+  "keywords": [
+    "interactive-fiction",
+    "branching-narrative",
+    "visual-novel",
+    "romance",
+    "story-engine",
+    "esm",
+    "zero-dependency",
+    "branching-story",
+    "choose-your-own-adventure",
+    "narrative-engine",
+    "interactive-narrative",
+    "dating-sim",
+    "interactive-story",
+    "json",
+    "typescript",
+    "ouba"
+  ],
+  "author": "Ouba Studio <team@ouba.art>",
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test test.mjs",
+    "example": "node examples/run.mjs --all",
+    "build:docs": "node scripts/build-docs.mjs",
+    "prepublishOnly": "npm test"
+  }
+}

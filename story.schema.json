@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ouba-studio/branching-story-kit/blob/main/story.schema.json",
+  "title": "branching-story-kit story manifest",
+  "description": "Story-graph manifest consumed by StoryEngine (branching-story-kit by Ouba Studio, MIT).",
+  "type": "object",
+  "required": ["start", "scenes"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "description": "Stable story identifier used in save files." },
+    "title": { "type": "string" },
+    "version": { "type": "string" },
+    "start": { "type": "string", "description": "Scene id of the opening scene." },
+    "initialState": {
+      "type": "object",
+      "description": "Default state (relationship meters, flags, inventory) merged with per-session overrides.",
+      "additionalProperties": { "type": ["number", "string", "boolean"] }
+    },
+    "scenes": {
+      "type": "object",
+      "description": "Scene id → scene definition.",
+      "propertyNames": { "pattern": "^[A-Za-z0-9_-]+$" },
+      "additionalProperties": { "$ref": "#/$defs/scene" }
+    }
+  },
+  "$defs": {
+    "scene": {
+      "type": "object",
+      "required": ["title", "body"],
+      "properties": {
+        "title": { "type": "string" },
+        "body": {
+          "type": "string",
+          "description": "Scene prose. {{stateKey}} placeholders are interpolated from the reader's state."
+        },
+        "tag": { "type": "string", "description": "Optional UI label (e.g. 'Scene 2 of 4'). Passed through untouched." },
+        "ending": { "type": "boolean", "default": false },
+        "choices": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/choice" }
+        }
+      },
+      "additionalProperties": true
+    },
+    "choice": {
+      "type": "object",
+      "required": ["label"],
+      "properties": {
+        "label": { "type": "string" },
+        "next": { "type": "string", "description": "Target scene id. Required unless `href` is set." },
+        "requires": {
+          "type": "object",
+          "description": "Minimum numeric state values required for the choice to be visible.",
+          "additionalProperties": { "type": "number" }
+        },
+        "effects": {
+          "type": "object",
+          "description": "Numbers are added to the current value; strings/booleans are assigned.",
+          "additionalProperties": { "type": ["number", "string", "boolean"] }
+        },
+        "href": {
+          "type": "string",
+          "format": "uri",
+          "description": "External link (store page, sequel, survey). The engine never navigates these for you."
+        }
+      },
+      "anyOf": [{ "required": ["next"] }, { "required": ["href"] }],
+      "additionalProperties": false
+    }
+  }
+}

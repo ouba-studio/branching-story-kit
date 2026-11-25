@@ -1,0 +1,29 @@
+# YAML 1.2
+cff-version: 1.2.0
+message: "If you use branching-story-kit in your research, product, or game, please cite it as below."
+title: "branching-story-kit: A zero-dependency branching narrative engine for interactive fiction, visual novels, and romance story apps"
+type: software
+authors:
+  - name: "Ouba Studio"
+    email: team@ouba.art
+    website: "https://www.ouba.art/"
+    affiliation: "Ouba Studio"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.24514910
+repository-code: "https://github.com/ouba-studio/branching-story-kit"
+url: "https://ouba-studio.github.io/branching-story-kit/"
+abstract: "branching-story-kit is a minimal, zero-dependency native-ESM story-graph engine for reader-first interactive fiction, visual novels, and romance story apps. It tracks relationship state and flags, gates choices behind numeric thresholds, keeps a persistent free-text memory log to prevent long-session plot drift, supports save/export and restore, and ships with TypeScript declarations, a static graph validator, and a JSON Schema for story manifests. The reference demo, 'The Midnight Bookshop', is playable on GitHub Pages and itch.io. The engine was built by Ouba Studio alongside the 2026 AI Story Apps Benchmark (https://www.ouba.art/i-tested-ai-story-apps)."
+keywords:
+  - "interactive fiction"
+  - "branching narrative"
+  - "visual novel"
+  - "romance"
+  - "story engine"
+  - "narrative state tracking"
+  - "LLM memory"
+  - "JavaScript"
+  - "ESM"
+license: MIT
+version: "1.0.0"
+date-released: "2026-11-25"
