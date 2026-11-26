@@ -1,0 +1,67 @@
+# MkDocs configuration — branching-story-kit (Ouba Studio)
+# Docs: https://www.mkdocs.org/user-guide/configuration/
+
+site_name: branching-story-kit
+site_description: Zero-dependency branching narrative engine, state tracker, memory log and validator for reader-first interactive fiction.
+site_url: https://branching-story-kit.readthedocs.io/
+site_dir: site
+
+# The repository's docs/ folder also hosts the legacy GitHub Pages site
+# (index.html + demo modules). Exclude those so MkDocs owns the build output.
+exclude_docs: |
+  index.html
+  engine.mjs
+  story.mjs
+  screenshot-1280x720.png
+
+repo_name: ouba-studio/branching-story-kit
+repo_url: https://github.com/ouba-studio/branching-story-kit
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+    - search.highlight
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - codehilite:
+      guess_lang: false
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+
+nav:
+  - Home: index.md
+  - Quickstart: quickstart.md
+  - Benchmark: benchmark.md
+  - API: api.md
+  - Citations: citations.md
