@@ -2,5 +2,12 @@
   "name": "@ouba-studio/branching-story-kit",
   "version": "1.0.0",
   "exports": "./index.mjs",
-  "license": "MIT"
+  "license": "MIT",
+  "exclude": [
+    "docs/",
+    "test.mjs",
+    "scripts/",
+    ".github/",
+    ".nojekyll"
+  ]
 }
