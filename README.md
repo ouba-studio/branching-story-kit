@@ -353,3 +353,7 @@ students also get [Ouba+ free](https://www.ouba.art/students) for full-length re
 - **The 2026 AI Story Apps Benchmark** — https://www.ouba.art/i-tested-ai-story-apps
 - **Cite this kit** — Zenodo DOI [10.5281/zenodo.24514910](https://doi.org/10.5281/zenodo.24514910)
 - **Contact** — team@ouba.art
+
+### Live November 2026 US App Store Audit & Interactive Benchmark
+- **Live iOS App Store Removals Tracker (Nov 28, 2026):** [7 Removed AI Chat Apps & Working Native iOS Alternatives](https://www.ouba.art/ai-chat-apps-removed-from-app-store-2026) (programmatic US iTunes Lookup API audit covering PolyBuzz, Talkie, Chai AI, SpicyChat, Tipsy Chat, Zeta, and Linky)
+- **Full 10-App Turn-15 Memory Benchmark Write-Up:** [I Tested 10 AI Story Apps](https://www.ouba.art/i-tested-ai-story-apps) · [Harvard Dataverse DOI 10.7910/DVN/YEBHQR](https://doi.org/10.7910/DVN/YEBHQR)
