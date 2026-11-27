@@ -100,6 +100,8 @@ Everything here is citable and permanent. Data and report are **CC-BY-4.0**; `br
 |---|---|
 | `branching-story-kit` (GitHub) | [github.com/ouba-studio/branching-story-kit](https://github.com/ouba-studio/branching-story-kit) |
 | `branching-story-kit` (Bitbucket mirror) | [bitbucket.org/ouba-studio/branching-story-kit](https://bitbucket.org/ouba-studio/branching-story-kit/src/main/) |
+| `branching-story-kit` (GitLab mirror) | [gitlab.com/ouba-studio/branching-story-kit](https://gitlab.com/ouba-studio/branching-story-kit) |
+| `branching-story-kit` (SourceForge mirror — release files + Git) | [sourceforge.net/projects/ouba-story-kit](https://sourceforge.net/projects/ouba-story-kit/) |
 | `branching-story-kit` (GitHub Pages docs) | [ouba-studio.github.io/branching-story-kit](https://ouba-studio.github.io/branching-story-kit/) |
 | `branching-story-kit` (Read the Docs) | [branching-story-kit.readthedocs.io](https://branching-story-kit.readthedocs.io/en/latest/) |
 | `branching-story-kit` (StackBlitz IDE) | [stackblitz.com/github/ouba-studio/branching-story-kit](https://stackblitz.com/github/ouba-studio/branching-story-kit) |
@@ -109,7 +111,10 @@ Everything here is citable and permanent. Data and report are **CC-BY-4.0**; `br
 | `branching-story-mcp` (Official MCP Registry) | [registry.modelcontextprotocol.io](https://registry.modelcontextprotocol.io/v0/servers?search=branching-story-mcp) |
 | `branching-story-mcp` (Glama MCP Directory) | [glama.ai/mcp/servers/ouba-studio/branching-story-mcp](https://glama.ai/mcp/servers/ouba-studio/branching-story-mcp) |
 | `branching-story-mcp` (Bitbucket mirror) | [bitbucket.org/ouba-studio/branching-story-mcp](https://bitbucket.org/ouba-studio/branching-story-mcp/src/main/) |
+| `branching-story-mcp` (GitLab mirror) | [gitlab.com/ouba-studio/branching-story-mcp](https://gitlab.com/ouba-studio/branching-story-mcp) |
+| `branching-story-mcp` (mcpservers.org directory) | [mcpservers.org/servers/ouba-studio/branching-story-mcp](https://mcpservers.org/servers/ouba-studio/branching-story-mcp) |
 | Benchmark Dataset Repository | [github.com/ouba-studio/ai-story-apps-benchmark-2026](https://github.com/ouba-studio/ai-story-apps-benchmark-2026) |
+| Benchmark Dataset Repository (GitLab mirror) | [gitlab.com/ouba-studio/ai-story-apps-benchmark-2026](https://gitlab.com/ouba-studio/ai-story-apps-benchmark-2026) |
 | Interactive Hugging Face Space | [huggingface.co/spaces/oubaapp/ai-story-benchmark-explorer](https://huggingface.co/spaces/oubaapp/ai-story-benchmark-explorer) |
 | Reproducible Google Colab Notebook | [colab.research.google.com/github/ouba-studio/ai-story-apps-benchmark-2026](https://colab.research.google.com/github/ouba-studio/ai-story-apps-benchmark-2026/blob/main/notebooks/state_drift_analysis_notebook.ipynb) |
 
@@ -126,6 +131,8 @@ Everything here is citable and permanent. Data and report are **CC-BY-4.0**; `br
 | Executive slide deck (SpeakerDeck) | [speakerdeck.com/oubastudio/ouba-2026-ai-story-benchmark-report](https://speakerdeck.com/oubastudio/ouba-2026-ai-story-benchmark-report) |
 | Executive deck (Gamma) | [gamma.app benchmark deck](https://gamma.app/docs/State-Drift-in-Consumer-LLM-Interactive-Fiction-2026-Benchmark-6ay5mn0yd27dlb8) |
 | Research publication (Substack) | [oubastudio.substack.com](https://oubastudio.substack.com/p/why-consumer-ai-story-apps-forget) |
+| Reader-First podcast (Spotify) | [open.spotify.com/show/1w0GB08z1B7YwBXMtraDS3](https://open.spotify.com/show/1w0GB08z1B7YwBXMtraDS3) |
+| Romance-trope reading guides (6) | [Dark romance interactive story app](https://www.ouba.art/dark-romance-interactive-story-app) · [Enemies-to-lovers interactive stories](https://www.ouba.art/enemies-to-lovers-interactive-stories) · [Romantasy interactive story app](https://www.ouba.art/romantasy-interactive-story-app) · [Mafia romance interactive story app](https://www.ouba.art/mafia-romance-interactive-story-app) · [Slow-burn interactive romance app](https://www.ouba.art/slow-burn-interactive-romance-app) · [AI otome game for iOS](https://www.ouba.art/ai-otome-game-ios) |
 | Wikidata Entity | [wikidata.org/wiki/Q140090475](https://www.wikidata.org/wiki/Q140090475) |
 | Contact | [team@ouba.art](mailto:team@ouba.art) |
 
