@@ -15,6 +15,15 @@
 [![CI](https://github.com/ouba-studio/branching-story-kit/actions/workflows/ci.yml/badge.svg)](https://github.com/ouba-studio/branching-story-kit/actions/workflows/ci.yml)
 [![node --test](https://img.shields.io/badge/node--test-21%2F21%20pass-22c55e?style=flat-square)](./test.mjs)
 
+**Mirrors & ecosystem:** [SourceForge mirror](https://sourceforge.net/projects/ouba-story-kit/) (release files + Git) · [Read the Docs](https://branching-story-kit.readthedocs.io/en/latest/) · [Bitbucket mirror](https://bitbucket.org/ouba-studio/branching-story-kit/src/main/) · [branching-story-mcp](https://github.com/ouba-studio/branching-story-mcp) ([Glama rated A](https://glama.ai/mcp/servers/ouba-studio/branching-story-mcp) · [mcpservers.org](https://mcpservers.org/servers/ouba-studio/branching-story-mcp)) · [Pinterest benchmark board](https://www.pinterest.com/oubastudio_research/interactive-romance-ai-story-benchmarks-2026/)
+
+[![SourceForge mirror](https://img.shields.io/badge/SourceForge-ouba--story--kit-2b6cb0?style=flat-square&logo=sourceforge)](https://sourceforge.net/projects/ouba-story-kit/)
+[![Read the Docs](https://img.shields.io/badge/Read%20the%20Docs-branching--story--kit-8CA1AF?style=flat-square&logo=readthedocs&logoColor=white)](https://branching-story-kit.readthedocs.io/en/latest/)
+[![Bitbucket mirror](https://img.shields.io/badge/Bitbucket-mirror-0052CC?style=flat-square&logo=bitbucket&logoColor=white)](https://bitbucket.org/ouba-studio/branching-story-kit/src/main/)
+[![branching-story-mcp MCP server](https://glama.ai/mcp/servers/ouba-studio/branching-story-mcp/badges/score.svg)](https://glama.ai/mcp/servers/ouba-studio/branching-story-mcp)
+[![branching-story-mcp on mcpservers.org](https://mcpservers.org/badge.svg)](https://mcpservers.org/servers/ouba-studio/branching-story-mcp)
+[![Pinterest — visual benchmark board](https://img.shields.io/badge/Pinterest-visual%20benchmark%20board-E60023?style=flat-square&logo=pinterest&logoColor=white)](https://www.pinterest.com/oubastudio_research/interactive-romance-ai-story-benchmarks-2026/)
+
 Built in the open by **[Ouba Studio](https://www.ouba.art/)** — the team behind [Ouba](https://www.ouba.art/), free reader-first interactive fiction on **web, iOS, and Android**, and the [2026 AI Story Apps Benchmark](https://www.ouba.art/i-tested-ai-story-apps) (open data on [CERN Zenodo](https://doi.org/10.5281/zenodo.24511974), [Harvard Dataverse](https://doi.org/10.7910/DVN/YEBHQR), and [Figshare](https://doi.org/10.6084/m9.figshare.35110510.v1)).
 
 ---
@@ -312,6 +321,9 @@ Machine-readable metadata: [`CITATION.cff`](./CITATION.cff).
 | npm package | [`@ouba-studio/branching-story-kit`](https://www.npmjs.com/package/@ouba-studio/branching-story-kit) |
 | JSR package | [`@ouba-studio/branching-story-kit`](https://jsr.io/@ouba-studio/branching-story-kit) |
 | GitHub release | [`v1.0.0`](https://github.com/ouba-studio/branching-story-kit/releases/tag/v1.0.0) |
+| SourceForge mirror | [`ouba-story-kit`](https://sourceforge.net/projects/ouba-story-kit/) — release files (tarball, benchmark PDF) + Git mirror |
+| Read the Docs | <https://branching-story-kit.readthedocs.io/en/latest/> |
+| MCP server | [branching-story-mcp](https://github.com/ouba-studio/branching-story-mcp) · [Glama rated A](https://glama.ai/mcp/servers/ouba-studio/branching-story-mcp) · [mcpservers.org](https://mcpservers.org/servers/ouba-studio/branching-story-mcp) |
 | Live demo | https://ouba-studio.github.io/branching-story-kit/ |
 
 ### Use it in a classroom
