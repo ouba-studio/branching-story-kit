@@ -357,3 +357,11 @@ students also get [Ouba+ free](https://www.ouba.art/students) for full-length re
 ### Live November 2026 US App Store Audit & Interactive Benchmark
 - **Live iOS App Store Removals Tracker (Nov 28, 2026):** [7 Removed AI Chat Apps & Working Native iOS Alternatives](https://www.ouba.art/ai-chat-apps-removed-from-app-store-2026) (programmatic US iTunes Lookup API audit covering PolyBuzz, Talkie, Chai AI, SpicyChat, Tipsy Chat, Zeta, and Linky)
 - **Full 10-App Turn-15 Memory Benchmark Write-Up:** [I Tested 10 AI Story Apps](https://www.ouba.art/i-tested-ai-story-apps) · [Harvard Dataverse DOI 10.7910/DVN/YEBHQR](https://doi.org/10.7910/DVN/YEBHQR)
+## Third-Party Audits, Directories & Media Coverage
+
+Independent listings, open datasets, browser add-ons, and technical audits referencing this project and the 2026 interactive story benchmark:
+
+- **Curated Comparison List:** [AlternativeTo List #49007 — Interactive Romance & AI Story Apps (2026)](https://alternativeto.net/lists/49007/interactive-romance-and-ai-story-apps-2026/)
+- **Storefront & Extension Listings:** [Mozilla Add-ons (`ouba-story-launcher`)](https://addons.mozilla.org/addon/ouba-story-launcher/) · [Uptodown Android](https://ouba.en.uptodown.com/android) · [Product Hunt](https://www.producthunt.com/products/ouba) · [SaaSHub](https://www.saashub.com/ouba) · [Uneed](https://www.uneed.best/tool/ouba)
+- **Technical Audits & MCP Registries:** [DEV.to iOS App Store Audit (Nov 28, 2026)](https://dev.to/oubastudio/auditing-the-late-2026-ios-app-store-ai-companion-sweep-via-apples-itunes-search-api-nov-28-data-44pi) · [Hashnode App Store Sweep Report](https://oubastudio.hashnode.dev/late-2026-ios-app-store-ai-companion-sweep-nov-28-audit-7-removed-apps-clone-warnings-native-alternatives) · [Glama MCP (Grade A)](https://glama.ai/mcp/servers/@ouba-studio/branching-story-mcp) · [MCPRush](https://mcprush.com/ouba-studio/branching-story-mcp)
+- **Video & Audio Briefings:** [YouTube: PolyBuzz & Talkie App Store Removal Audit](https://www.youtube.com/watch?v=YSNn0anLmFg) · [YouTube: Character.AI Romance Story Alternative](https://www.youtube.com/watch?v=v7w20b0gaz4) · [Spotify Show](https://open.spotify.com/show/1w0GB08z1B7YwBXMtraDS3) · [TuneIn](https://tunein.com/radio/p4875905)
